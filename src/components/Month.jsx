@@ -1,5 +1,6 @@
 import React from 'react';
 import Day from './Day';
+import NewEvent from "./NewEvent";
 
 
 const y = new Date().getFullYear();
@@ -14,11 +15,14 @@ for (let i = 1; i <= dayOfMonth; i++) {
 }
 
 const Month = () => (
-  <div className={`calendar calendar-${dayOfMonth} calendar--w-${w}`}>
-    {arr.map((d) => (
-      <Day key={d} dateOfDay={`${y}-${m}-${d}`} />
-    ))}
-  </div>
+  <>
+    <NewEvent />
+    <div className={`calendar calendar-${dayOfMonth} calendar--w-${w}`}>
+      {arr.map((d) => (
+        <Day key={d} dateOfDay={`${y}-${m}-${d}`} />
+      ))}
+    </div>
+  </>
 );
 
 export default Month;
