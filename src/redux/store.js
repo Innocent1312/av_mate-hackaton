@@ -68,6 +68,7 @@ const rootReducer = (state, action) => {
         ...state,
         events: state.events.push({
           id: new Date().getTime(),
+          title: state.title,
           start_time: state.start_time,
           end_time: state.end_time,
           location: state.location,
@@ -86,11 +87,22 @@ const initialState = {
   events: [
     {
       id: new Date().getTime(),
+      title: 'Hello',
       start_time: '14:55',
       end_time: '15:55',
       location: 'Kyiv',
-      date: '2020-1-18',
+      date: '2020-1-31',
       mark: 'blue',
+      description: 'sth',
+    },
+    {
+      id: new Date().getTime(),
+      title: 'World',
+      start_time: '14:55',
+      end_time: '15:55',
+      location: 'Kyiv',
+      date: '2020-1-19',
+      mark: 'red',
       description: 'sth',
     },
   ],

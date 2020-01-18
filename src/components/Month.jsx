@@ -4,6 +4,7 @@ import Day from './Day';
 
 const y = new Date().getFullYear();
 const m = new Date().getMonth() + 1;
+const w = new Date(y, m - 1, 1).getDay();
 
 const dayOfMonth = 32 - new Date(y, m - 1, 32).getDate();
 
@@ -13,15 +14,10 @@ for (let i = 1; i <= dayOfMonth; i++) {
 }
 
 const Month = () => (
-  <div className="calendar">
-    <ul>
-      {arr.map((d) => (
-        <li>
-          <Day dateOfDay={`${y}-${m}-${d}`} />
-        </li>
-      ))}
-    </ul>
-
+  <div className={`calendar calendar-${dayOfMonth} calendar--w-${w}`}>
+    {arr.map((d) => (
+      <Day key={d} dateOfDay={`${y}-${m}-${d}`} />
+    ))}
   </div>
 );
 
