@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Event from "./components/Event";
+import Month from './components/Month';
 
 const App = () => (
   <>
     <div>Hello</div>
-    <Event />
+    <Month />
   </>
 );
 

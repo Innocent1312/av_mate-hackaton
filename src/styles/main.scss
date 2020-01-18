@@ -14,28 +14,28 @@ body {
   grid-template-columns: repeat(7, 100px);
   grid-gap: 1px;
   padding-top: 10px;
+}
 
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eee;
-    border: 1px solid black;
-    box-sizing: border-box;
-    height: 100px;
-    transition: transform 0.5s, background 0.5s;
-  }
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 100px;
+  transition: transform 0.5s, background 0.5s;
+}
 
-  div:hover {
-    cursor: pointer;
-    background: pink;
-    transform: translate(0, -20px);
-  }
+.day:hover {
+  cursor: pointer;
+  background: pink;
+  transform: translate(0, -20px);
+}
 
-  @for $day__number from 1 to 32 {
-    div:nth-child(#{$day__number})::after {
-      content: "#{$day__number}";
-    }
+@for $day__number from 1 to 32 {
+  .day:nth-child(#{$day__number})::after {
+    content: "#{$day__number}";
   }
 }
 

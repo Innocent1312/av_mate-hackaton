@@ -1,18 +1,26 @@
 import React from 'react';
-import Event from './Event';
+import { connect } from 'react-redux';
 
-const dailyEvents = event.filter(e => e.date.slice(0, -3) + '' === `${y}-${m}`);
+const Day = ({ dateOfDay} ) => (
+  <div className="day">
+    <p>{dateOfDay}</p>
+  </div>
+);
 
-const Day = ({dailyEvents}) => {
-  dailyEvents.map(ev =>
-    (<Event
-      key={ev.id}
-      id={ev.id}
-      title={ev.title}
-      eventTimeRange={ev.eventTimeRange}
-      description={ev.description}
-    />)
-  )
-};
+const mapStateToProps = (state) => ({
 
-export default Day;
+})
+
+// const Day = ({ dateOfDay }) => {
+//   dailyEvents.map((ev) =>
+//     (<Event
+//       key={ev.id}
+//       id={ev.id}
+//       title={ev.title}
+//       eventTimeRange={ev.eventTimeRange}
+//       description={ev.description}
+//     />)
+//   )
+// };
+
+export default connect(mapStateToProps)(Day);

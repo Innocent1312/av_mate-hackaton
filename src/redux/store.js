@@ -83,8 +83,18 @@ const rootReducer = (state, action) => {
 };
 
 const initialState = {
-  events: [],
+  events: [
+    {
+      id: new Date().getTime(),
+      start_time: '14:55',
+      end_time: '15:55',
+      location: 'Kyiv',
+      date: '2020-1-18',
+      mark: 'blue',
+      description: 'sth',
+    },
+  ],
 };
 
-const store = createStore(initialState, rootReducer);
+const store = createStore(rootReducer, initialState);
 export default store;
