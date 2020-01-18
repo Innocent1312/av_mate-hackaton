@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+
 import { Button, Modal, Input, Form, TextArea } from 'semantic-ui-react';
 import {setEvent} from '../redux/store';
 
+import { Button, Modal } from 'semantic-ui-react';
+import { setEvent } from '../redux/store';
+
+
 const NewEvent = (props) => {
+  // eslint-disable-next-line no-shadow,react/prop-types
   const { setEvent } = props;
 
   const [open, changeOpen] = useState(false);
@@ -14,8 +20,6 @@ const NewEvent = (props) => {
   const [endTime, setEndTime] = useState(null);
   const [mark, setMark] = useState(null);
   const [description, setDescription] = useState(null);
-  const getUniqueId = (id) => id + 1;
-
 
   return (
     <Modal
@@ -56,7 +60,6 @@ const NewEvent = (props) => {
           color="violet"
           onClick={() => {
             setEvent({
-              id: getUniqueId(0),
               title,
               date,
               location,

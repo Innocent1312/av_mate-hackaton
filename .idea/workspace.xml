@@ -9,6 +9,11 @@
       <change beforePath="$PROJECT_DIR$/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NewEvent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewEvent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/eventsSetter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/eventsUpdater.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

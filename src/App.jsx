@@ -1,5 +1,6 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Switch, Route } from 'react-router-dom';
 import './styles/main.scss';
 import Menu from './components/Menu';
 import Month from './components/Month';
@@ -11,8 +12,12 @@ const App = () => (
     <div className="container">
       <Menu/>
     </div>
-
     <div className="container">
+  <div className="main">
+    <header className="header">
+      <Menu />
+    </header>
+    <div className="components-wrapper">
       <main className="components">
         <Switch>
           <Route
@@ -30,7 +35,11 @@ const App = () => (
         </Switch>
       </main>
     </div>
+
   </>
+
+  </div>
+
 );
 
 export default App;
