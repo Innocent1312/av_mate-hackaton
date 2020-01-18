@@ -4,6 +4,9 @@
     <list default="true" id="faf0c882-7bd9-4807-aa39-d91737cdef1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Month.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Week.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Week.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Day.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Day.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Month.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NewEvent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent.jsx" afterDir="false" />
@@ -140,9 +143,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="338" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1579366963652" />
-    <state x="348" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1579368396305">
+    <state x="348" y="46" width="670" height="676" key="search.everywhere.popup" timestamp="1579374330855">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="348" y="46" width="670" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1579368396305" />
+    <state x="348" y="46" width="670" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1579374330855" />
   </component>
 </project>
