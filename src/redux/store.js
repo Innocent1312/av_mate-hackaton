@@ -14,7 +14,7 @@ export const setStartTime = (time) => ({ type: SET_START_TIME, time });
 export const setEndTime = (time) => ({ type: SET_END_TIME, time });
 export const setLocation = (location) => ({ type: SET_LOCATION, location });
 export const setMark = (mark) => ({ type: SET_MARK, mark });
-export const setDescription = (description) => ({ type: SET_START_TIME, description });
+export const setDescription = (description) => ({ type: SET_DESCRIPTION, description });
 export const setDate = (myDate) => ({ type: SET_DATE, myDate });
 export const setEvent = () => ({ type: SET_EVENT });
 
@@ -67,7 +67,7 @@ const rootReducer = (state, action) => {
     case SET_EVENT:
       return {
         ...state,
-        events: state.events.push({
+        events: [...state.events, {
           id: new Date().getTime(),
           title: state.title,
           start_time: state.start_time,
@@ -76,7 +76,7 @@ const rootReducer = (state, action) => {
           myDate: state.myDate,
           mark: state.mark,
           description: state.description,
-        }),
+        }],
       };
 
     default:
@@ -92,7 +92,7 @@ const initialState = {
       start_time: '14:55',
       end_time: '15:55',
       location: 'Kyiv',
-      myDate: '2020-1-19',
+      myDate: '2020-01-19',
       mark: 'blue',
       description: 'sth',
     },

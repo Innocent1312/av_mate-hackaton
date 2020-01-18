@@ -1,11 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Button, Modal } from 'semantic-ui-react';
+import { Modal } from 'semantic-ui-react';
 import Event from './Event';
-import NewEvent from "./NewEvent";
 
 const Day = ({ dateOfDay, events }) => {
-  const filteredEvents = events.filter(item => item.date === dateOfDay);
+  const filteredEvents = events.filter(item => {
+    const reg = /-0/g;
+    const newMyDate = item.myDate.replace(reg, '-');
+    return newMyDate === dateOfDay;
+  });
 
   return (
     <Modal trigger={<div className="day" />}>
@@ -18,15 +21,15 @@ const Day = ({ dateOfDay, events }) => {
                   key={item.id}
                   id={item.id}
                   description={item.description}
+                  location={item.location}
                   start_time={item.start_time}
                   title={item.title}
                 />
               ))}
-              <NewEvent />
             </>
           )
           : (
-            <NewEvent />
+            <h2>There is no event for this day</h2>
           )}
       </Modal.Content>
     </Modal>
