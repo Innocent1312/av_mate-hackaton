@@ -40,7 +40,13 @@ body {
 }
 
 @for $day from 28 to 31 {
-  .calendar-#{$day} div:nth-child(#{$day}) ~ div {
+  .calendar--week-#{$day} div:nth-child(#{$day}) ~ div {
+    display: none;
+  }
+}
+
+@for $day from 28 to 31 {
+  .calendar--week-#{$day} div:nth-child(#{$day}) ~ div {
     display: none;
   }
 }
