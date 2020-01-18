@@ -22,7 +22,7 @@ const Day = ({ dateOfDay, events }) => {
                   id={item.id}
                   description={item.description}
                   location={item.location}
-                  start_time={item.start_time}
+                  start_time={item.startTime}
                   title={item.title}
                 />
               ))}
