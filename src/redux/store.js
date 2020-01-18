@@ -31,13 +31,13 @@ const rootReducer = (state, action) => {
     case SET_START_TIME:
       return {
         ...state,
-        start_time: action.start_time,
+        startTime: action.time,
       };
 
     case SET_END_TIME:
       return {
         ...state,
-        end_time: action.end_time,
+        endTime: action.time,
       };
 
     case SET_LOCATION:
@@ -70,8 +70,8 @@ const rootReducer = (state, action) => {
         events: [...state.events, {
           id: new Date().getTime(),
           title: state.title,
-          start_time: state.start_time,
-          end_time: state.end_time,
+          startTime: state.startTime,
+          endTime: state.endTime,
           location: state.location,
           myDate: state.myDate,
           mark: state.mark,
@@ -85,18 +85,7 @@ const rootReducer = (state, action) => {
 };
 
 const initialState = {
-  events: [
-    {
-      id: new Date().getTime(),
-      title: 'Hello',
-      start_time: '14:55',
-      end_time: '15:55',
-      location: 'Kyiv',
-      myDate: '2020-01-19',
-      mark: 'blue',
-      description: 'sth',
-    },
-  ],
+  events: [],
 };
 
 const store = createStore(rootReducer, initialState);

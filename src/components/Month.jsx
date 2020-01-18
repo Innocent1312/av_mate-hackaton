@@ -1,6 +1,6 @@
 import React from 'react';
 import Day from './Day';
-import NewEvent from "./NewEvent";
+import NewEvent from './NewEvent';
 
 
 const y = new Date().getFullYear();
