@@ -4,8 +4,11 @@ import {NavLink} from 'react-router-dom';
 const Menu = () => {
 
   return (
-    <div className="menu">
-      <NavLink to="month">
+    <nav className="nav">
+      <NavLink
+        className=""
+        activeClassName=""
+        to="month">
         Month
       </NavLink>
       <NavLink to="week">
@@ -14,7 +17,7 @@ const Menu = () => {
       <NavLink to="day">
         Day
       </NavLink>
-    </div>
+    </nav>
   )
 };
 export default Menu;
