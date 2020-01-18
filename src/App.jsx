@@ -7,31 +7,30 @@ import Week from './components/Week';
 import Day from './components/Day';
 
 const App = () => (
-  <div className="main">
-    <header className="header">
+  <>
+    <div className="container">
       <Menu/>
-    </header>
-
-      <div className="components-wrapper">
-          <main className="components">
-              <Switch>
-                  <Route
-                    path="/month"
-                    component={Month}
-                  />
-                  <Route
-                    path="/week"
-                    component={Week}
-                  />
-                  <Route
-                    path="/day"
-                    component={Day}
-                  />
-              </Switch>
-          </main>
-      </div>
-
     </div>
+
+    <div className="container">
+      <main className="components">
+        <Switch>
+          <Route
+            path="/month"
+            component={Month}
+          />
+          <Route
+            path="/week"
+            component={Week}
+          />
+          <Route
+            path="/day"
+            component={Day}
+          />
+        </Switch>
+      </main>
+    </div>
+  </>
 );
 
 export default App;
