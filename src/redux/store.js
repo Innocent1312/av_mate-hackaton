@@ -91,7 +91,7 @@ const initialState = {
       start_time: '14:55',
       end_time: '15:55',
       location: 'Kyiv',
-      date: '2020-1-31',
+      date: '2020-1-19',
       mark: 'blue',
       description: 'sth',
     },

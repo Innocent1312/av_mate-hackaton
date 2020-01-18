@@ -1,13 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Modal } from 'semantic-ui-react';
 import Event from './Event';
 
-const Day = ({ dateOfDay, events} ) => {
+const Day = ({ dateOfDay, events }) => {
   const filteredEvents = events.filter(item => item.date === dateOfDay);
 
   return (
-    <div className="day">
-      <ul>
+    <Modal trigger={<div className="day" />}>
+      <Modal.Content>
         {filteredEvents.map((item) => (
           <Event
             key={item.id}
@@ -17,8 +18,8 @@ const Day = ({ dateOfDay, events} ) => {
             title={item.title}
           />
         ))}
-      </ul>
-    </div>
+      </Modal.Content>
+    </Modal>
   );
 };
 
