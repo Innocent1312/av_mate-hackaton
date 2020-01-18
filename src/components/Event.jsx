@@ -1,15 +1,20 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import { connect } from 'react-redux';
+import { Button, Card } from 'semantic-ui-react';
+import { deleteEvent } from '../redux/store';
 
 
-const Event = ({ id, title, start_time, location, description }) => (
+const Event = ({
+  id, title, start_time, location, description, deleteEvent,
+}) => (
   <Card
     id={id}
     header={title}
-    meta={start_time}
+    meta={`${start_time}`}
     extra={location}
+    meta={<Button negative onClick={() => deleteEvent(id)}>Delete</Button>}
     description={description}
   />
 );
 
-export default Event;
+export default connect(() => ({}), { deleteEvent })(Event);
