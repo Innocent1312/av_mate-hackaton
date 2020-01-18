@@ -11,7 +11,7 @@ const Day = ({ dateOfDay, events }) => {
   });
 
   return (
-    <Modal className="text-centergit" size="mini" trigger={
+    <Modal className="text-center" size="mini" trigger={
       <div className="day">
         <div className="dot" />
       </div>
