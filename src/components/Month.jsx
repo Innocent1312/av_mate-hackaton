@@ -16,8 +16,8 @@ for (let i = 1; i <= dayOfMonth; i++) {
 
 const Month = () => (
   <>
-    <NewEvent />
-    <div className={`calendar--month calendar--month-${dayOfMonth} calendar--month-weekStart-${w}`}>
+
+    <div className={`calendar calendar__month-${dayOfMonth} calendar__month-weekStart-${w}`}>
       {arr.map((d) => (
         <Day key={d} dateOfDay={`${y}-${m}-${d}`} />
       ))}

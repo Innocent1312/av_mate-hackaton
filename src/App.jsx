@@ -12,22 +12,24 @@ const App = () => (
       <Menu/>
     </header>
 
-    <main className="components">
-        <Switch>
-            <Route
-              path="/month"
-              component={Month}
-            />
-            <Route
-              path="/week"
-              component={Week}
-            />
-            <Route
-              path="/day"
-              component={Day}
-            />
-        </Switch>
-    </main>
+      <div className="components-wrapper">
+          <main className="components">
+              <Switch>
+                  <Route
+                    path="/month"
+                    component={Month}
+                  />
+                  <Route
+                    path="/week"
+                    component={Week}
+                  />
+                  <Route
+                    path="/day"
+                    component={Day}
+                  />
+              </Switch>
+          </main>
+      </div>
 
     </div>
 );
