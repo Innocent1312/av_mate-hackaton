@@ -11,13 +11,22 @@ const Day = ({ dateOfDay, events }) => {
   });
 
   return (
+
+    <Modal className="text-center" size="mini" trigger={
+
     <Modal trigger={(
+
       <div className="day">
         <div className={filteredEvents.length > 0 ? 'dot' : ' '} />
       </div>
+
+    }>
+      <Modal.Content className="text-center">
+
     )}
     >
       <Modal.Content>
+
         {filteredEvents.length > 0
           ? (
             <>
