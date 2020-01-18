@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Button, Modal } from 'semantic-ui-react';
 import {
@@ -10,7 +10,7 @@ import {
   setLocation,
   setMark,
   setStartTime,
-  myDate,
+  events,
 } from '../redux/store';
 
 const NewEvent = (props) => {
@@ -23,19 +23,20 @@ const NewEvent = (props) => {
     setLocation,
     setMark,
     setStartTime,
-    myDate
   } = props;
 
-  console.log(myDate);
-
+  const [open, changeOpen] = useState(false);
   return (
-    <Modal trigger={<Button color="green">Create new</Button>}>
+    <Modal open={open} trigger={<Button onClick={() => changeOpen(true)} color="green">Create new</Button>}>
       <Modal.Content>
         <input type="text" onChange={((event) => (setTitle(event.target.value)))} placeholder="title" />
         <input type="date" onChange={((event) => (setDate(event.target.value)))} />
         <input type="text" onChange={((event) => (setLocation(event.target.value)))} placeholder="location" />
+        <input type="time" onChange={((event) => (setStartTime(event.target.value)))} />
+        <input type="time" onChange={((event) => (setEndTime(event.target.value)))} />
+        <Button onClick={(() => (setMark('blue')))}>SetMark</Button>
         <textarea onChange={((event) => (setDescription(event.target.value)))} placeholder="description" />
-        <Button color="violet" onClick={setEvent}>Submit</Button>
+        <Button color="violet" onClick={() => { setEvent(); changeOpen(false) }}>Submit</Button>
       </Modal.Content>
     </Modal>
   );
@@ -54,7 +55,6 @@ const mapDispatchToProps = {
 
 const mapStateToProps = (state) => ({
   events: state.events,
-  myDate: state.myDate,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewEvent);
