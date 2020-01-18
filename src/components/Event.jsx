@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react';
 
 
-const Event = ({id, title, eventTimeRange, description}) => (
+const Event = ({ id, title, eventTimeRange, description }) => (
   <Card
     id={id}
     header={title}

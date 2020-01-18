@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faf0c882-7bd9-4807-aa39-d91737cdef1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Day.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Day.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Event.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Month.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,21 +105,29 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579339158275" />
-    <state width="1259" height="193" key="GridCell.Tab.0.bottom" timestamp="1579347237997">
+    <state x="166" y="0" key="CommitChangelistDialog2" timestamp="1579354236897">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="193" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579347237997" />
-    <state width="1259" height="193" key="GridCell.Tab.0.center" timestamp="1579347237996">
+    <state x="166" y="0" key="CommitChangelistDialog2/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579354236897" />
+    <state width="1259" height="193" key="GridCell.Tab.0.bottom" timestamp="1579354747294">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="193" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579347237996" />
-    <state width="1259" height="193" key="GridCell.Tab.0.left" timestamp="1579347237993">
+    <state width="1259" height="193" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579354747294" />
+    <state width="1259" height="193" key="GridCell.Tab.0.center" timestamp="1579354747293">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="193" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579347237993" />
-    <state width="1259" height="193" key="GridCell.Tab.0.right" timestamp="1579347237997">
+    <state width="1259" height="193" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579354747293" />
+    <state width="1259" height="193" key="GridCell.Tab.0.left" timestamp="1579354747292">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="193" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579347237997" />
+    <state width="1259" height="193" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579354747292" />
+    <state width="1259" height="193" key="GridCell.Tab.0.right" timestamp="1579354747293">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="193" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579354747293" />
+    <state x="336" y="33" key="RollbackChangesDialog" timestamp="1579354233520">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="336" y="33" key="RollbackChangesDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1579354233520" />
   </component>
 </project>
