@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faf0c882-7bd9-4807-aa39-d91737cdef1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/eventsUpdater.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Month.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Week.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Week.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Day.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Day.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Month.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Month.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NewEvent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewEvent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Week.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Week.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/eventsRemover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/eventsSetter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

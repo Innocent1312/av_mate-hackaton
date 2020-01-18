@@ -6,7 +6,7 @@ import Event from './Event';
 const Day = ({ dateOfDay, events }) => {
   const filteredEvents = events.filter(item => {
     const reg = /-0/g;
-    const newMyDate = item.myDate.replace(reg, '-');
+    const newMyDate = item.date.replace(reg, '-');
     return newMyDate === dateOfDay;
   });
 

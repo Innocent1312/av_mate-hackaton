@@ -1,32 +1,22 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Button, Modal } from 'semantic-ui-react';
-import {
-  setTitle,
-  setDate,
-  setDescription,
-  setEndTime,
-  setEvent,
-  setLocation,
-  setMark,
-  setStartTime,
-} from '../redux/store';
+import {setEvent} from '../redux/store';
 
 const NewEvent = (props) => {
-  const {
-    setTitle,
-    setDate,
-    setDescription,
-    setEndTime,
-    setEvent,
-    setLocation,
-    setMark,
-    setStartTime,
-    mark
-  } = props;
+  const { setEvent } = props;
 
   const [open, changeOpen] = useState(false);
-  console.log(mark)
+  const [title, setTitle] = useState(null);
+  const [date, setDate] = useState(null);
+  const [location, setLocation] = useState(null);
+  const [startTime, setStartTime] = useState(null);
+  const [endTime, setEndTime] = useState(null);
+  const [mark, setMark] = useState(null);
+  const [description, setDescription] = useState(null);
+  const getUniqueId = (id) => id + 1;
+
+
   return (
     <Modal open={open} trigger={<Button onClick={() => changeOpen(true)} color="green">Create new</Button>}>
       <Modal.Content>
@@ -42,7 +32,23 @@ const NewEvent = (props) => {
           <option value="grey">Grey</option>
         </select>
         <textarea onChange={((event) => (setDescription(event.target.value)))} placeholder="description" />
-        <Button color="violet" onClick={() => { setEvent(); changeOpen(false); }}>Submit</Button>
+        <Button
+          color="violet"
+          onClick={() => {
+            setEvent({
+              id: getUniqueId(0),
+              title,
+              date,
+              location,
+              startTime,
+              endTime,
+              mark,
+              description,
+            }); changeOpen(false);
+          }}
+        >
+          Submit
+        </Button>
         <Button onClick={() => changeOpen(false)} color="red">Close</Button>
       </Modal.Content>
     </Modal>
@@ -50,14 +56,7 @@ const NewEvent = (props) => {
 };
 
 const mapDispatchToProps = {
-  setTitle,
-  setStartTime,
-  setMark,
-  setLocation,
   setEvent,
-  setEndTime,
-  setDescription,
-  setDate,
 };
 
 const mapStateToProps = (state) => ({
