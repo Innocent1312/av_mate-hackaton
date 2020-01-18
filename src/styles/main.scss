@@ -1,0 +1,55 @@
+$days-in-week: ("mon", "tue", "wed", "thu", "fri", "sat", "sun");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  grid-gap: 1px;
+  padding-top: 10px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 100px;
+    transition: transform 0.5s, background 0.5s;
+  }
+
+  div:hover {
+    cursor: pointer;
+    background: pink;
+    transform: translate(0, -20px);
+  }
+
+  @for $day__number from 1 to 32 {
+    div:nth-child(#{$day__number})::after {
+      content: "#{$day__number}";
+    }
+  }
+}
+
+@for $day from 28 to 31 {
+  .calendar-#{$day} div:nth-child(#{$day}) ~ div {
+    display: none;
+  }
+}
+
+$i: 1;
+
+@each $days in $days-in-week {
+  .calendar-#{$days} > div:nth-child(1) {
+    grid-column-start: #{$i};
+  }
+  $i: $i + 1;
+}
