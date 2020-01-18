@@ -1,4 +1,4 @@
-$days-in-week: ("mon", "tue", "wed", "thu", "fri", "sat", "sun");
+
 
 body {
   display: flex;
@@ -45,11 +45,8 @@ body {
   }
 }
 
-$i: 1;
-
-@each $days in $days-in-week {
-  .calendar-#{$days} > div:nth-child(1) {
-    grid-column-start: #{$i};
+@for $day from 1 to 7 {
+  .calendar--w-#{$day} > div:nth-child(1) {
+    grid-column-start: #{$day};
   }
-  $i: $i + 1;
 }

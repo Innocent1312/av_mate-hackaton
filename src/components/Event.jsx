@@ -2,13 +2,12 @@ import React from 'react';
 import { Card } from 'semantic-ui-react';
 
 
-const Event = ({ id, title, eventTimeRange, description }) => (
+const Event = ({ id, title, start_time,  description }) => (
   <Card
     id={id}
     header={title}
-    meta={eventTimeRange}
+    meta={start_time}
     description={description}
-    onClick={console.log(id, title)}
   />
 );
 
