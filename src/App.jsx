@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Switch, Route } from 'react-router-dom';
 import './styles/main.scss';
@@ -8,17 +8,39 @@ import Week from './components/Week';
 import Day from './components/Day';
 
 const App = () => {
-  const y = new Date().getFullYear();
-  const m = new Date().getMonth() + 1;
+  const [y, setY] = useState(new Date().getFullYear());
+  const [m, setM] = useState(new Date().getMonth() + 1);
   const w = new Date(y, m - 1, 1).getDay();
 
-  const dayOfMonth = 32 - new Date(y, m - 1, 32).getDate();
 
+  const handleClickPrev = () => {
+    if (m === 0) {
+      setY(y - 1);
+      setM(11);
+    } else {
+      setM(m - 1);
+    }
+  };
+  const handleClickNext = () => {
+    if (m === 11) {
+      setY(y + 1);
+      setM(0);
+    } else {
+      setM(m + 1);
+    }
+  };
+
+  const dayOfMonth = 32 - new Date(y, m - 1, 32).getDate();
 
   return (
     <div className="main">
       <header className="header">
-        <Menu />
+        <Menu
+          handleClickPrev={handleClickPrev}
+          handleClickNext={handleClickNext}
+          y={y}
+          m={m}
+        />
       </header>
 
       <div className="components-wrapper">
