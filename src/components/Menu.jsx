@@ -8,11 +8,11 @@ const Menu = () => {
     <nav className="nav">
       <div className="nav__arrows">
         <div
-          className="ui basic button nav__arrows--left">
+          className="nav__arrows--left">
           {`<`}
         </div>
         <div
-          className="ui basic button nav__arrows--right">
+          className="nav__arrows--right">
           {`>`}
         </div>
       </div>
@@ -20,22 +20,22 @@ const Menu = () => {
         18 jan
       </div>
       <div className="nav__right-block">
-        <div className="nav__links block">
+        <div className="nav__links">
           <NavLink
-            className="nav__links"
-            activeClassName="nav__links--active"
+            className="nav__link"
+            activeClassName="nav__link--active"
             to="month">
             Month
           </NavLink>
           <NavLink
-            className="nav__links"
-            activeClassName="nav__links--active"
+            className="nav__link"
+            activeClassName="nav__link--active"
             to="week">
             Week
           </NavLink>
           <NavLink
-            className="nav__links"
-            activeClassName="nav__links--active"
+            className="nav__link"
+            activeClassName="nav__link--active"
             to="day">
             Day
           </NavLink>

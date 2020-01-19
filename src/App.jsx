@@ -8,15 +8,11 @@ import Week from './components/Week';
 import Day from './components/Day';
 
 const App = () => (
-  <>
-    <div className="container">
-      <Menu/>
-    </div>
-    <div className="container">
   <div className="main">
     <header className="header">
       <Menu />
     </header>
+
     <div className="components-wrapper">
       <main className="components">
         <Switch>
@@ -35,11 +31,7 @@ const App = () => (
         </Switch>
       </main>
     </div>
-
-  </>
-
   </div>
-
 );
 
 export default App;
