@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d978a33bdf705a2c34a78ee2a177fb92",
+    "revision": "283342faf037c4dfb174effc7746d49f",
     "url": "/av_ma-hackaton/index.html"
   },
   {
-    "revision": "8c5f2295c731baad3f49",
+    "revision": "26178c1602e5a60a6ae2",
     "url": "/av_ma-hackaton/static/css/main.c8699729.chunk.css"
   },
   {
-    "revision": "b8b6d4972c3d4dcdd0d2",
-    "url": "/av_ma-hackaton/static/js/2.d22793b6.chunk.js"
+    "revision": "4f22e3ec22018200e8e2",
+    "url": "/av_ma-hackaton/static/js/2.761a3a73.chunk.js"
   },
   {
     "revision": "f8513fb9f2981a1b206fb733b985f272",
-    "url": "/av_ma-hackaton/static/js/2.d22793b6.chunk.js.LICENSE"
+    "url": "/av_ma-hackaton/static/js/2.761a3a73.chunk.js.LICENSE"
   },
   {
-    "revision": "8c5f2295c731baad3f49",
-    "url": "/av_ma-hackaton/static/js/main.00376d15.chunk.js"
+    "revision": "26178c1602e5a60a6ae2",
+    "url": "/av_ma-hackaton/static/js/main.85691757.chunk.js"
   },
   {
     "revision": "93332afdf99666486365",
