@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/av_ma-hackaton/static/css/main.c8699729.chunk.css",
+    "main.js": "/av_ma-hackaton/static/js/main.b88ce552.chunk.js",
+    "main.js.map": "/av_ma-hackaton/static/js/main.b88ce552.chunk.js.map",
+    "runtime-main.js": "/av_ma-hackaton/static/js/runtime-main.21066cc9.js",
+    "runtime-main.js.map": "/av_ma-hackaton/static/js/runtime-main.21066cc9.js.map",
+    "static/js/2.761a3a73.chunk.js": "/av_ma-hackaton/static/js/2.761a3a73.chunk.js",
+    "static/js/2.761a3a73.chunk.js.map": "/av_ma-hackaton/static/js/2.761a3a73.chunk.js.map",
+    "index.html": "/av_ma-hackaton/index.html",
+    "precache-manifest.7fb9c56969b4596d50e35f67b64df4fd.js": "/av_ma-hackaton/precache-manifest.7fb9c56969b4596d50e35f67b64df4fd.js",
+    "service-worker.js": "/av_ma-hackaton/service-worker.js",
+    "static/css/main.c8699729.chunk.css.map": "/av_ma-hackaton/static/css/main.c8699729.chunk.css.map",
+    "static/js/2.761a3a73.chunk.js.LICENSE": "/av_ma-hackaton/static/js/2.761a3a73.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21066cc9.js",
+    "static/js/2.761a3a73.chunk.js",
+    "static/css/main.c8699729.chunk.css",
+    "static/js/main.b88ce552.chunk.js"
+  ]
+}
