@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mate-hackaton/static/css/main.c8699729.chunk.css",
-    "main.js": "/mate-hackaton/static/js/main.5e5d724a.chunk.js",
-    "main.js.map": "/mate-hackaton/static/js/main.5e5d724a.chunk.js.map",
+    "main.js": "/mate-hackaton/static/js/main.13c08d53.chunk.js",
+    "main.js.map": "/mate-hackaton/static/js/main.13c08d53.chunk.js.map",
     "runtime-main.js": "/mate-hackaton/static/js/runtime-main.d83ca284.js",
     "runtime-main.js.map": "/mate-hackaton/static/js/runtime-main.d83ca284.js.map",
     "static/js/2.0458c090.chunk.js": "/mate-hackaton/static/js/2.0458c090.chunk.js",
     "static/js/2.0458c090.chunk.js.map": "/mate-hackaton/static/js/2.0458c090.chunk.js.map",
     "index.html": "/mate-hackaton/index.html",
-    "precache-manifest.d53aebe6ce2c3556c3916924609fee42.js": "/mate-hackaton/precache-manifest.d53aebe6ce2c3556c3916924609fee42.js",
+    "precache-manifest.010c3a12ccdd5bc2e70d9daa00c39904.js": "/mate-hackaton/precache-manifest.010c3a12ccdd5bc2e70d9daa00c39904.js",
     "service-worker.js": "/mate-hackaton/service-worker.js",
     "static/css/main.c8699729.chunk.css.map": "/mate-hackaton/static/css/main.c8699729.chunk.css.map",
     "static/js/2.0458c090.chunk.js.LICENSE": "/mate-hackaton/static/js/2.0458c090.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d83ca284.js",
     "static/js/2.0458c090.chunk.js",
     "static/css/main.c8699729.chunk.css",
-    "static/js/main.5e5d724a.chunk.js"
+    "static/js/main.13c08d53.chunk.js"
   ]
 }
