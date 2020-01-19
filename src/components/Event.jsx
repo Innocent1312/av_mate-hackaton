@@ -10,8 +10,8 @@ const Event = ({
   <Card
     id={id}
     header={title}
-    meta={`${start_time}`}
-    extra={location}
+    meta={start_time}
+    extra={(<a rel="noopener noreferrer" target="_blank" href={`https://www.google.com/maps/place/${location}`}>{location}</a>)}
     meta={<Button negative onClick={() => deleteEvent(id)}>Delete</Button>}
     description={description}
   />

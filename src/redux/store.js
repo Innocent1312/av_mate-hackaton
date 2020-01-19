@@ -13,6 +13,7 @@ const uniqueIdGenerator = () => {
     return counter;
   };
 };
+
 const getUniqueEventId = uniqueIdGenerator();
 
 const rootReducer = (state, action) => {
