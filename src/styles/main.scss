@@ -3,34 +3,29 @@ body {
   font-size: 30px;
   font-family: 'Google Sans', Roboto,Arial, sans-serif;
 }
-
-#root {
-  display: block;
-  justify-content: center;
-  width: 100vw;
+.container {
+  max-width: 1147px;
+  width: 100%;
+  margin: auto;
 }
-
-.main {
-  width: 1000px;
-}
-
 .nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-
   &__arrows {
-    cursor: pointer;
-    display: inline-block;
-
     &--left,
     &--right {
       display: inline-block;
     }
   }
-
-  &__link {
+  &__current-date {
+    font-size: 16px;
+  }
+  &__links {
+    & .block {
+      margin-right: 15px;
+    }
     margin: 7px 12px 5px 12px;
     font-size: 14px;
     font-weight: 500;
@@ -38,50 +33,48 @@ body {
     text-transform: none;
     opacity: 1;
     color: #3c4043;
-
     &--active {
       color: #242343;
     }
   }
+  &__right-block {
+    display: flex;
+  }
 }
-
 .components {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-  &-wrapper {
-    display: block;
-  }
 }
-
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 100px);
   grid-gap: 1px;
   padding-top: 10px;
 
+  &__week {
+    @for $day__number from 0 to 6 {
+      .day:nth-child(#{$day__number})::after {
+        content: "#{$day__number}";
+      }
+    }
+  }
 }
-
 @for $day__number from 1 to 32 {
   .day:nth-child(#{$day__number})::after {
     content: "#{$day__number}";
   }
 }
-
 @for $day from 28 to 31 {
   .calendar__month-#{$day} div:nth-child(#{$day}) ~ div {
     display: none;
   }
 }
-
 @for $day from 28 to 31 {
   .calendar__month-#{$day} div:nth-child(#{$day}) ~ div {
     display: none;
   }
 }
-
 @for $day from 1 to 7 {
   .calendar__month-weekStart-#{$day} > div:nth-child(1) {
     grid-column-start: #{$day};
@@ -107,6 +100,10 @@ body {
   background: #abb4ee;
 }
 
+.one-day {
+
+  height: 100%;
+}
 .dot {
   position: absolute;
   top: 10px;
@@ -116,3 +113,37 @@ body {
   border-radius: 50px;
   background-color: red;
 }
+.text-center {
+  text-align: center;
+}
+
+.create-event .ui {
+
+  .input,
+  .textarea {
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .header {
+      max-height: 1.4em;
+    }
+
+    .description {
+      max-height: 11.7em;
+    }
+
+    .extra {
+      max-height: 1.4em;
+    }
+  }
+}
+

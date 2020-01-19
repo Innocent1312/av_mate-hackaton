@@ -1,28 +1,22 @@
 import React from 'react';
 import Day from './Day';
-import NewEvent from './NewEvent';
 
 
-const y = new Date().getFullYear();
-const m = new Date().getMonth() + 1;
-const w = new Date(y, m - 1, 1).getDay();
+const Month = ({y, m, w, dayOfMonth}) => {
+  const arr = [];
+  for (let i = 1; i <= dayOfMonth; i += 1) {
+    arr[i - 1] = i;
+  }
 
-const dayOfMonth = 32 - new Date(y, m - 1, 32).getDate();
-
-let arr = [];
-for (let i = 1; i <= dayOfMonth; i++) {
-  arr[i - 1] = i;
-}
-
-const Month = () => (
-  <>
-
-    <div className={`calendar calendar__month-${dayOfMonth} calendar__month-weekStart-${w}`}>
-      {arr.map((d) => (
-        <Day key={d} dateOfDay={`${y}-${m}-${d}`} />
-      ))}
-    </div>
-  </>
-);
+  return (
+    <>
+      <div className={`calendar calendar__month-${dayOfMonth} calendar__month-weekStart-${w}`}>
+        {arr.map((d) => (
+          <Day key={d} dateOfDay={`${y}-${m}-${d}`} />
+        ))}
+      </div>
+    </>
+  );
+};
 
 export default Month;
